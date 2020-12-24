@@ -19,6 +19,10 @@ class ViewController: UIViewController {
         operand = sender.titleLabel?.text as! String
     }
     @IBAction func clearAction(_ sender: UIButton) {
+        operand = ""
+        numberOne = ""
+        numberTwo = ""
+        resultLabel.text = "0"
     }
     @IBAction func inputNumber(_ sender: UIButton) {
         if operand.isEmpty {
