@@ -46,6 +46,7 @@ class ViewController: UIViewController {
             } else {
                 resultLabel.text = String(result)
             }
+            
             numberOne = ""
             numberTwo = ""
         }
