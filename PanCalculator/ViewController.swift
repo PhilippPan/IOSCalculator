@@ -63,5 +63,8 @@ class ViewController: UIViewController {
         }
         
     }
+    @IBAction func resizeLabel(_ sender: UIStepper) {
+        resultLabel.font = resultLabel.font.withSize(CGFloat(sender.value))
+    }
 }
 
