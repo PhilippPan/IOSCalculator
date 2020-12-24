@@ -27,27 +27,33 @@ class ViewController: UIViewController {
     @IBAction func resultAction(_ sender: UIButton) {
         
         var result = 0.0
-        
-        switch operand {
-        case "+":
-            result = Double(numberOne)! + Double(numberTwo)!
-        case "-":
-            result = Double(numberOne)! - Double(numberTwo)!
-        case "*":
-            result = Double(numberOne)! * Double(numberTwo)!
-        case "/":
-            result = Double(numberOne)! / Double(numberTwo)!
-        default:
-            break
-        }
-        
-        if result.truncatingRemainder(dividingBy: 1.0) == 0.0 {
-            resultLabel.text = String(Int(result))
-        } else {
-            resultLabel.text = String(result)
+        if !numberTwo.isEmpty {
+            switch operand {
+            case "+":
+                result = Double(numberOne)! + Double(numberTwo)!
+            case "-":
+                result = Double(numberOne)! - Double(numberTwo)!
+            case "*":
+                result = Double(numberOne)! * Double(numberTwo)!
+            case "/":
+                result = Double(numberOne)! / Double(numberTwo)!
+            default:
+                break
+            }
+            
+            if result.truncatingRemainder(dividingBy: 1.0) == 0.0 {
+                resultLabel.text = String(Int(result))
+            } else {
+                resultLabel.text = String(result)
+            }
+            numberOne = ""
+            numberTwo = ""
         }
     }
     @IBAction func inputNumber(_ sender: UIButton) {
+        if resultLabel.text != "0" {
+            resultLabel.text = "0"
+        }
         if operand.isEmpty {
             numberOne = numberOne + (sender.titleLabel?.text)!
             resultLabel.text = numberOne

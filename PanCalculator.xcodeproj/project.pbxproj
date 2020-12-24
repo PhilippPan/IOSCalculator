@@ -13,6 +13,7 @@
 		CEC9B4F22594B1F8000B7E95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC9B4F02594B1F8000B7E95 /* Main.storyboard */; };
 		CEC9B4F42594B206000B7E95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC9B4F32594B206000B7E95 /* Assets.xcassets */; };
 		CEC9B4F72594B206000B7E95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC9B4F52594B206000B7E95 /* LaunchScreen.storyboard */; };
+		CEC9B5002594C8BA000B7E95 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC9B4FF2594C8BA000B7E95 /* MyButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CEC9B4F32594B206000B7E95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEC9B4F62594B206000B7E95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEC9B4F82594B206000B7E95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC9B4FF2594C8BA000B7E95 /* MyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				CEC9B4EE2594B1F8000B7E95 /* ViewController.swift */,
 				CEC9B4F02594B1F8000B7E95 /* Main.storyboard */,
 				CEC9B4F32594B206000B7E95 /* Assets.xcassets */,
+				CEC9B4FF2594C8BA000B7E95 /* MyButton.swift */,
 				CEC9B4F52594B206000B7E95 /* LaunchScreen.storyboard */,
 				CEC9B4F82594B206000B7E95 /* Info.plist */,
 			);
@@ -140,6 +143,7 @@
 				CEC9B4EF2594B1F8000B7E95 /* ViewController.swift in Sources */,
 				CEC9B4EB2594B1F8000B7E95 /* AppDelegate.swift in Sources */,
 				CEC9B4ED2594B1F8000B7E95 /* SceneDelegate.swift in Sources */,
+				CEC9B5002594C8BA000B7E95 /* MyButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
