@@ -16,6 +16,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
 
     @IBAction func inputOperand(_ sender: UIButton) {
+        operand = sender.titleLabel?.text as! String
+    }
+    @IBAction func clearAction(_ sender: UIButton) {
+    }
+    @IBAction func inputNumber(_ sender: UIButton) {
         if operand.isEmpty {
             numberOne = numberOne + (sender.titleLabel?.text)!
             resultLabel.text = numberOne
@@ -23,10 +28,7 @@ class ViewController: UIViewController {
             numberTwo = numberTwo + (sender.titleLabel?.text)!
             resultLabel.text = numberTwo
         }
-    }
-    @IBAction func clearAction(_ sender: UIButton) {
-    }
-    @IBAction func inputNumber(_ sender: UIButton) {
+        
     }
 }
 
